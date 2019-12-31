@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity"
+    android:background="@color/textWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="기본 정보"
+                    android:textColor="@color/defaultGreen"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/usericon"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mypage_name"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="이름: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/mypage_email"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="이메일: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"/>
+
+                        <Button
+                            android:id="@+id/edit_btn"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:textSize="13dp"
+                            android:textColor="@color/textWhite"
+                            android:text="수정"
+                            android:background="@drawable/rounded_button"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="취향 정보"
+                    android:textColor="@color/defaultGreen"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="선호 여행"
+                                android:textSize="20dp"
+                                android:layout_marginRight="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/cheheom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="체험"/>
+
+                            <CheckBox
+                                android:id="@+id/nature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="자연"/>
+
+                            <CheckBox
+                                android:id="@+id/tradition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="전통문화"/>
+
+                            <CheckBox
+                                android:id="@+id/wellbeing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="웰빙"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="선호 체험"
+                                android:textSize="20dp"
+                                android:layout_marginRight="10dp"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/edit_btn2"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="5dp"
+                            android:textSize="13dp"
+                            android:textColor="@color/textWhite"
+                            android:text="수정"
+                            android:background="@drawable/rounded_button"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/logout"
+                    android:text="로그아웃"
+                    android:textColor="@color/textWhite"
+                    android:background="@drawable/rounded_button"
+                    android:layout_gravity="center"
+                    android:onClick="btnlogoutclick"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 내비게이션 바 -->
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/defaultGreen"
+        android:gravity="bottom|center"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/mytrip_btn"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/defaultGreen"
+            android:padding="0dp"
+            android:src="@drawable/mytrip" />
+
+        <ImageButton
+            android:id="@+id/scrap_btn"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/defaultGreen"
+            android:padding="0dp"
+            android:src="@drawable/scrap" />
+
+        <ImageButton
+            android:id="@+id/main_btn"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/defaultGreen"
+            android:padding="0dp"
+            android:src="@drawable/main" />
+
+        <ImageButton
+            android:id="@+id/review_btn"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/defaultGreen"
+            android:padding="0dp"
+            android:src="@drawable/review" />
+
+        <ImageButton
+            android:id="@+id/mypage_btn"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/defaultGreen"
+            android:padding="0dp"
+            android:src="@drawable/mypage" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
